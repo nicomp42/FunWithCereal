@@ -1,9 +1,13 @@
 # csvUtilities
-
+# Utility functions for processing the CSV files are defined here
+# Bill Nicholson
+# nicholdw@ucmail.uc.edu
+# IS4010 Spring 2024
 import csv
+
 def readCSV():
     """
-    Read the cereals file in to a list of lists
+    Read the cereals CSV file into a list of lists
     @return: The list of lists
     """
     with open('..\dataPackage\\cereals.txt') as csv_file:
