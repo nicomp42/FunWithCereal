@@ -5,6 +5,7 @@
 # IS4010 Spring 2024
 import csv
 
+
 def readCSV():
     """
     Read the cereals CSV file into a list of lists
@@ -16,11 +17,11 @@ def readCSV():
         cereals = []
         for row in csv_reader:
             if line_count == 0:
-                #print(f'Column names are {", ".join(row)}')
+                # print(f'Column names are {", ".join(row)}')
                 line_count += 1
             else:
                 cereals.append(row)
-                #print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
+                # print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
                 line_count += 1
-        #print(cereals)
+        # print(cereals)
     return cereals
