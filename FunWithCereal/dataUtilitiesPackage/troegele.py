@@ -5,7 +5,7 @@
 # Due Date: 04/11/2024
 # Course/Section: IS 4010 - 002
 # Semester/Year: Spring 2024
-# Brief Description of the assignment: 
+# Brief Description of the assignment: Team assignment that prints and returns protein value of Cinnemon Toast Crunch.
 # Citations: 
 # Anything else that's relevant:
 
