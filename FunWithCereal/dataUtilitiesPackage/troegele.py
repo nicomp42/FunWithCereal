@@ -32,13 +32,11 @@ def troegele():
             fields = line.strip().split("\t")
             # Extract the calories
             proteins = fields[4]
-            # Print the calories
-            #print("Cinnemon Toast Crunch has ", proteins," gramm of protein.")
-            #break
+            # Print the protein
             return f"Cinnemon Toast Crunch has {proteins} gramm of protein."
   # Stop searching after finding the relevant line
     
-       return None   
+          
    
 
      
