@@ -15,8 +15,11 @@ if __name__ == "__main__":
     for student in students:
         try:
             # Build the import statement in a string and execute it
-            exec("from dataPackage." + student + " import " + student)
-        except:
+            cmd = "from dataPackage." + student + " import " + student
+            exec(cmd)
+        except Exception as e:
+            print(e) 
+            print("cmd:", cmd)
             print("**** Import failed for " + student + "*****")
 
     myCereals = readCSV()
