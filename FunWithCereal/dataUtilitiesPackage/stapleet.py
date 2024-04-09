@@ -6,7 +6,7 @@
 # Semester/Year: Spring 2024
 # Brief Description of the assignment: Creating a function to take the provided csv file and extract a piece of interesting data from it.
 # Citations:
-# Anything else that's relevant:
+# Anything else that's relevant: ChatGBT used as reference.
 
 from csvUtilitiesPackage.csvUtilities import readCSV
 
