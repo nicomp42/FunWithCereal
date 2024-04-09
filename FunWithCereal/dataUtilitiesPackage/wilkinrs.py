@@ -10,12 +10,28 @@
 # Anything else that's relevant: NO
 
 from csvUtilitiesPackage.csvUtilities import *
+from pickle import NONE
 myCereal = readCSV()
 
 
-def wilkinrs():
-    CT = myCereal[12:13]
-    cal = [iteam[3]for iteam in CT]
-    cup = [iteam[14] for iteam in CT]
-    cerealName = [iteam[0] for iteam in CT]
-    print("".join(cerealName),"contains", "".join(cal),"calories for every", "" .join(cup),"cups!")
+def wilkinrs(csv_file=r'..\dataPackage\cereals.txt'):
+    '''
+    Input: none 
+    Return: A sentence about the calories per cup in Cinnamon Toast Crunch
+    '''
+    with open(csv_file, 'r') as file:
+        reader = csv.reader(file)
+        
+        for _ in range(76):
+            next(reader, None)
+            
+        line_77 = next(reader, None)
+        
+        if line_77: 
+            first_word_line_77 = line_77[0].split()[0]
+            answer = f"{first_word_line_77}, is the breakfast of champions!"
+            
+    
+        return answer
+    
+ 
