@@ -26,5 +26,6 @@ if __name__ == "__main__":
         try:
             # Build the code in a string and execute it 
             exec(student + "()")
-        except:
+        except Exception as e:
+            print(e) 
             print("**** Code execution failed for " + student + "*****")
