@@ -15,7 +15,7 @@ if __name__ == "__main__":
     for student in students:
         try:
             # Build the import statement in a string and execute it
-            exec("from dataPackage." + student + " import cunninig")
+            exec("from dataPackage." + student + " import " + student)
         except:
             print("**** Import failed for " + student + "*****")
 
