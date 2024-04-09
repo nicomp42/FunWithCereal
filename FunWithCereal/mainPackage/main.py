@@ -6,18 +6,25 @@
 
 from csvUtilitiesPackage.csvUtilities import *
 
-try:
-    from dataPackage.cinninig import cunninig
-except:
-    pass
-
 if __name__ == "__main__":
+
+    students = ["cunninig", "gilligtp", "harrints", "jarrelbc"
+              , "kleinbw",  "lisowsmd", "moorehc",  "patel5a5"
+              , "shahh4",   "stapleet", "troegele", "wilkinrs"
+              , "willi6d3", "wogomomr"]
+    for student in students:
+        try:
+            # Build the import statement in a string and execute it
+            exec("from dataPackage." + student + " import cunninig")
+        except:
+            print("**** Import failed for " + student + "*****")
 
     myCereals = readCSV()
     print(myCereals)
-    
-    try:
-        cunninig()
-    except:
-        pass
-    
+
+    for student in students:
+        try:
+            # Build the code in a string and execute it 
+            exec(student + "()")
+        except:
+            print("**** Code execution failed for " + student + "*****")
