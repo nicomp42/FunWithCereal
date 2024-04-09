@@ -23,8 +23,9 @@ def lisowsmd():
     for row in cereals_data:
         if "Cinnamon_Toast_Crunch" in row:
             sugar = row[10]  # Assuming sugar is at index 10
-            print("Cinnamon Toast Crunch has", sugar, "grams of sugar.")
+            sentence = f"Cinnamon Toast Crunch has {sugar} grams of sugar."
+            return sentence
             break  # Stop searching after finding the relevant line
         
 if __name__ == "__main__":
-    lisowsmd()
+    print(lisowsmd())
