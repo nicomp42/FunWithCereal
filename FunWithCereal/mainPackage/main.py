@@ -9,8 +9,8 @@ from csvUtilitiesPackage.csvUtilities import *
 if __name__ == "__main__":
 
     students = ["cunninig", "gilligtp", "harrints", "jarrelbc"
-              , "kleinbw",  "lisowsmd", "moorehc",  "patel5a5"
-              , "shahh4",   "stapleet", "troegele", "wilkinrs"
+              , "kleinbw", "lisowsmd", "moorehc", "patel5a5"
+              , "shahh4", "stapleet", "troegele", "wilkinrs"
               , "willi6d3", "wogomomr"]
     for student in students:
         try:
