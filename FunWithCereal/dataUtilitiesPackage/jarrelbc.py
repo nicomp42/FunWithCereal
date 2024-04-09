@@ -7,9 +7,9 @@ from csvUtilitiesPackage.csvUtilities import readCSV
 def jarrelbc():
        
     """
-       Prints the calorie content of Apple Jacks cereal.
+       Prints the sugar content of Apple Jacks cereal.
        Reads the cereal data from a CSV file and searches for the entry corresponding to
-       Apple Jacks. Once found, it extracts and prints the calorie content of
+       Apple Jacks. Once found, it extracts and prints the sugar content of
        Apple Jacks.
        Returns: None
     """
@@ -23,9 +23,9 @@ def jarrelbc():
                 # Split the line by tab to
                 #extract the fields
                 fields = line.strip().split("\t")
-                # Extract the calories
+                # Extract the sugar amount
                 sugars = fields[9]
-                # Print the calories
+                # Print the sugar amount
                 
-                return f"The amount sugar in the Apple Jacks cereal is {sugars} "
+                return f"The amount sugar in the Apple Jacks cereal is {sugars} grams. "
             
