@@ -15,5 +15,8 @@ def kleinbw():
     CeralRow = myCereals[5:6]
     calories = [item[3] for item in CeralRow]
     CerealName = [item[0] for item in CeralRow]
-    print("".join(CerealName), "has","".join(calories),"calories")
+    return f".{CerealName} has {calories} calories"
+
+#if __name__ == "__main__":
+    #print(kleinbw())
     
